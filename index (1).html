@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ani/Alix Websites</title>
+<style>
+:root{
+  --pink:#ff6fb1;
+  --purple:#8d6cff;
+  --blue:#52b6ff;
+  --green:#69d391;
+  --yellow:#ffe680;
+  --text:#222;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:linear-gradient(135deg,#fff0f6,#eef9ff,#f1fff3);
+  color:var(--text);
+}
+header{
+  padding:28px 18px 16px;
+  text-align:center;
+}
+h1{
+  margin:0;
+  font-size:42px;
+  font-weight:900;
+  letter-spacing:.5px;
+}
+.name{
+  background:linear-gradient(90deg,var(--pink),var(--purple),var(--blue),var(--green));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.subtitle{
+  font-size:22px;
+  margin:12px 0 0;
+}
+.search-wrap{
+  max-width:800px;
+  margin:12px auto 20px;
+  padding:0 18px;
+}
+#search{
+  width:100%;
+  font-size:24px;
+  padding:16px 18px;
+  border-radius:18px;
+  border:3px solid #d8d8ff;
+  outline:none;
+}
+.favorites,.section{
+  max-width:1100px;
+  margin:0 auto 22px;
+  padding:0 18px;
+}
+h2{
+  text-align:left;
+  font-size:26px;
+  margin:18px 0 12px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:16px;
+}
+.card{
+  display:block;
+  text-decoration:none;
+  color:#222;
+  background:white;
+  border-radius:22px;
+  padding:20px 12px;
+  min-height:120px;
+  box-shadow:0 4px 12px rgba(0,0,0,.13);
+  border:3px solid rgba(255,255,255,.8);
+  transition:transform .08s ease, box-shadow .08s ease;
+}
+.card:hover,.card:focus{
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(0,0,0,.18);
+}
+.emoji{
+  display:block;
+  font-size:40px;
+  line-height:1;
+}
+.label{
+  display:block;
+  font-size:22px;
+  font-weight:700;
+  margin-top:12px;
+}
+.create .card{background:#fff6dd}
+.learn .card{background:#e9f5ff}
+.watch .card{background:#f0e9ff}
+.shop .card{background:#ffeef7}
+footer{
+  text-align:center;
+  color:#666;
+  padding:18px;
+}
+@media (max-width:600px){
+  h1{font-size:34px}
+  .subtitle{font-size:19px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .label{font-size:20px}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="name">Ani/Alix</span> Websites</h1>
+  <p class="subtitle">Welcome!</p>
+</header>
+
+<div class="search-wrap">
+  <input id="search" type="search" placeholder="Search websites..." aria-label="Search websites">
+</div>
+
+<div class="favorites">
+  <h2>⭐ Favorites</h2>
+  <div class="grid">
+    <a class="card" href="https://canva.com" data-name="canva">
+      <span class="emoji">🎨</span><span class="label">Canva</span>
+    </a><a class="card" href="https://disneyplus.com" data-name="disney+">
+      <span class="emoji">🎬</span><span class="label">Disney+</span>
+    </a><a class="card" href="https://etsy.com" data-name="etsy">
+      <span class="emoji">🛍️</span><span class="label">Etsy</span>
+    </a><a class="card" href="https://netflix.com" data-name="netflix">
+      <span class="emoji">🎥</span><span class="label">Netflix</span>
+    </a><a class="card" href="https://pixilart.com" data-name="pixilart">
+      <span class="emoji">🖌️</span><span class="label">Pixilart</span>
+    </a><a class="card" href="https://scratch.mit.edu" data-name="scratch">
+      <span class="emoji">🐱</span><span class="label">Scratch</span>
+    </a>
+  </div>
+</div>
+
+<section class="section create">
+  <h2>Create</h2>
+  <div class="grid">
+    <a class="card" href="https://canva.com" data-name="canva">
+      <span class="emoji">🎨</span><span class="label">Canva</span>
+    </a><a class="card" href="https://crayola.com" data-name="crayola">
+      <span class="emoji">🖍️</span><span class="label">Crayola</span>
+    </a><a class="card" href="https://kleki.com" data-name="kleki">
+      <span class="emoji">🎨</span><span class="label">Kleki</span>
+    </a><a class="card" href="https://origami.me" data-name="origami">
+      <span class="emoji">✂️</span><span class="label">Origami</span>
+    </a><a class="card" href="https://photopea.com" data-name="photopea">
+      <span class="emoji">📷</span><span class="label">Photopea</span>
+    </a><a class="card" href="https://pixilart.com" data-name="pixilart">
+      <span class="emoji">🖌️</span><span class="label">Pixilart</span>
+    </a>
+  </div>
+</section>
+
+<section class="section learn">
+  <h2>Learn</h2>
+  <div class="grid">
+    <a class="card" href="https://code.org" data-name="code.org">
+      <span class="emoji">💻</span><span class="label">Code.org</span>
+    </a><a class="card" href="https://explore.org" data-name="explore.org">
+      <span class="emoji">🌍</span><span class="label">Explore.org</span>
+    </a><a class="card" href="https://nationalgeographic.com" data-name="national geographic">
+      <span class="emoji">🦁</span><span class="label">National Geographic</span>
+    </a><a class="card" href="https://natgeokids.com" data-name="national geographic kids">
+      <span class="emoji">🦊</span><span class="label">National Geographic Kids</span>
+    </a><a class="card" href="https://scratch.mit.edu" data-name="scratch">
+      <span class="emoji">🐱</span><span class="label">Scratch</span>
+    </a><a class="card" href="https://smithsonianmag.com" data-name="smithsonian">
+      <span class="emoji">🏛️</span><span class="label">Smithsonian</span>
+    </a>
+  </div>
+</section>
+
+<section class="section watch">
+  <h2>Watch</h2>
+  <div class="grid">
+    <a class="card" href="https://disneyplus.com" data-name="disney+">
+      <span class="emoji">🎬</span><span class="label">Disney+</span>
+    </a><a class="card" href="https://netflix.com" data-name="netflix">
+      <span class="emoji">🎥</span><span class="label">Netflix</span>
+    </a>
+  </div>
+</section>
+
+<section class="section shop">
+  <h2>Shop & Browse</h2>
+  <div class="grid">
+    <a class="card" href="https://chapters.indigo.ca" data-name="chapters">
+      <span class="emoji">📖</span><span class="label">Chapters</span>
+    </a><a class="card" href="https://etsy.com" data-name="etsy">
+      <span class="emoji">🛍️</span><span class="label">Etsy</span>
+    </a><a class="card" href="https://heroforge.com" data-name="hero forge">
+      <span class="emoji">🎲</span><span class="label">Hero Forge</span>
+    </a><a class="card" href="https://indigo.ca" data-name="indigo">
+      <span class="emoji">📚</span><span class="label">Indigo</span>
+    </a><a class="card" href="https://lego.com" data-name="lego">
+      <span class="emoji">🧱</span><span class="label">LEGO</span>
+    </a><a class="card" href="https://toytheater.com" data-name="toy theater">
+      <span class="emoji">🖼️</span><span class="label">Toy Theater</span>
+    </a>
+  </div>
+</section>
+
+<footer>Use the buttons above to open approved websites.</footer>
+<script>
+const search = document.getElementById('search');
+search.addEventListener('input', () => {
+  const q = search.value.toLowerCase().trim();
+  document.querySelectorAll('.card').forEach(card => {
+    card.style.display = card.dataset.name.includes(q) ? '' : 'none';
+  });
+});
+</script>
+</body>
+</html>
